@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RocketController : MonoBehaviour
+public class RocketController2 : MonoBehaviour
 {
     public Rigidbody rb;
-    public AgentControler ac;
+    public AgentControler2 ac;
     public float force = 20f;
     public bool engineOn = false;
+    
+    public float cnt = 0;
 
     public bool reset = false;
     public Renderer floorRenderer;
@@ -16,7 +18,7 @@ public class RocketController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ac = GetComponent<AgentControler>();
+        ac = GetComponent<AgentControler2>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -34,6 +36,7 @@ public class RocketController : MonoBehaviour
     public void OnEngine()
     {
         engineOn = true;
+        cnt++;
     }
 
     public void OffEngine()
@@ -84,6 +87,7 @@ public class RocketController : MonoBehaviour
         else
         {
             floorRenderer.material.color = Color.green;
+            //1f >> unity에서는 대부분의 실수 연산에 float을 통해 사용함
             ac.EndEpisode(1f);
         }
     }

@@ -1,0 +1,6 @@
+behaviors:
+    My Behavior:
+        max_steps: 1000
+        keep_checkpoints: 10
+        checkpoint_interval: 10
+        summary_freq: 10

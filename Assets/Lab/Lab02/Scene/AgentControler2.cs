@@ -5,14 +5,14 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 
-public class AgentControler : Agent
+public class AgentControler2 : Agent
 {
-    public RocketController rc;
+    public RocketController2 rc;
     public bool episodeFinished = false;
 
     public override void Initialize()
     {
-        rc = GetComponent<RocketController>();
+        rc = GetComponent<RocketController2>();
     }
 
     public override void OnEpisodeBegin()
