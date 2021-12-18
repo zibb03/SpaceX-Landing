@@ -1,32 +1,62 @@
 {
+    "init_height": {
+        "lesson_num": 2
+    },
     "My Behavior": {
         "checkpoints": [
             {
-                "steps": 499984,
-                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-499984.onnx",
-                "reward": 0.0,
-                "creation_time": 1638621066.634451,
+                "steps": 98499984,
+                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-98499984.onnx",
+                "reward": 1.0,
+                "creation_time": 1639768016.2573316,
                 "auxillary_file_paths": [
-                    "results\\Rocket3\\My Behavior\\My Behavior-499984.pt"
+                    "results\\Rocket3\\My Behavior\\My Behavior-98499984.pt"
                 ]
             },
             {
-                "steps": 500011,
-                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-500011.onnx",
-                "reward": 0.0,
-                "creation_time": 1638621066.7724504,
+                "steps": 98999955,
+                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-98999955.onnx",
+                "reward": 1.0,
+                "creation_time": 1639768878.03164,
                 "auxillary_file_paths": [
-                    "results\\Rocket3\\My Behavior\\My Behavior-500011.pt"
+                    "results\\Rocket3\\My Behavior\\My Behavior-98999955.pt"
+                ]
+            },
+            {
+                "steps": 99499988,
+                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-99499988.onnx",
+                "reward": 1.0,
+                "creation_time": 1639769741.486943,
+                "auxillary_file_paths": [
+                    "results\\Rocket3\\My Behavior\\My Behavior-99499988.pt"
+                ]
+            },
+            {
+                "steps": 99999945,
+                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-99999945.onnx",
+                "reward": 1.0,
+                "creation_time": 1639770606.0153394,
+                "auxillary_file_paths": [
+                    "results\\Rocket3\\My Behavior\\My Behavior-99999945.pt"
+                ]
+            },
+            {
+                "steps": 100000065,
+                "file_path": "results\\Rocket3\\My Behavior\\My Behavior-100000065.onnx",
+                "reward": 1.0,
+                "creation_time": 1639770606.1523404,
+                "auxillary_file_paths": [
+                    "results\\Rocket3\\My Behavior\\My Behavior-100000065.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 500011,
+            "steps": 100000065,
             "file_path": "results\\Rocket3\\My Behavior.onnx",
-            "reward": 0.0,
-            "creation_time": 1638621066.7724504,
+            "reward": 1.0,
+            "creation_time": 1639770606.1523404,
             "auxillary_file_paths": [
-                "results\\Rocket3\\My Behavior\\My Behavior-500011.pt"
+                "results\\Rocket3\\My Behavior\\My Behavior-100000065.pt"
             ]
         }
     },

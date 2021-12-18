@@ -32,9 +32,9 @@ behaviors:
     init_path: null
     keep_checkpoints: 5
     checkpoint_interval: 500000
-    max_steps: 500000
+    max_steps: 100000000
     time_horizon: 64
-    summary_freq: 1000
+    summary_freq: 10000
     threaded: false
     self_play: null
     behavioral_cloning: null
@@ -52,7 +52,48 @@ engine_settings:
   target_frame_rate: -1
   capture_frame_rate: 60
   no_graphics: false
-environment_parameters: null
+environment_parameters:
+  init_height:
+    curriculum:
+    - value:
+        sampler_type: constant
+        sampler_parameters:
+          seed: 7698
+          value: 10
+      name: init_height1
+      completion_criteria:
+        behavior: My Behavior
+        measure: progress
+        min_lesson_length: 0
+        signal_smoothing: true
+        threshold: 0.1
+        require_reset: false
+    - value:
+        sampler_type: constant
+        sampler_parameters:
+          seed: 7699
+          value: 20
+      name: init_height2
+      completion_criteria:
+        behavior: My Behavior
+        measure: progress
+        min_lesson_length: 0
+        signal_smoothing: true
+        threshold: 0.4
+        require_reset: false
+    - value:
+        sampler_type: constant
+        sampler_parameters:
+          seed: 7700
+          value: 30
+      name: init_height3
+      completion_criteria:
+        behavior: My Behavior
+        measure: progress
+        min_lesson_length: 0
+        signal_smoothing: true
+        threshold: 0.9
+        require_reset: false
 checkpoint_settings:
   run_id: Rocket3
   initialize_from: null
